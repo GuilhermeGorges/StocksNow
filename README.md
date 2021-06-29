@@ -25,10 +25,8 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- JavaScript
-- JAVA
-- Angular
-- SQL
+- Java
+- PostgrSQL
 - Spring Framework
 
 ## 💻 Projeto
