@@ -8,7 +8,6 @@ import java.time.LocalDate;
 @Table(name = "tb_stock")
 
 public class Stock {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
