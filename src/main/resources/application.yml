@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8090
   servlet:
     context-path: /bootcamp
 
@@ -8,10 +8,10 @@ spring:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:4000/postgres
     username: postgres
-    password:
+    password: 123456
   jpa:
     show-sql: true
     database-platform: org.hibernate.dialect.PostgreSQLDialect
-    generate-dll: true
+    generate-ddl: false
     hibernate:
-      dll-auto: none
+      ddl-auto: none
