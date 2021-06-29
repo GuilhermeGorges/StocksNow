@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
+@CrossOrigin
 @RestController
 @RequestMapping(value = "/stock")
 public class StockController {
 
     @Autowired
     private StockService service;
-
 
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
@@ -44,4 +44,8 @@ public class StockController {
         return ResponseEntity.ok(service.findById(id));
     }
 
+    @GetMapping(value = "/today", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<StockDTO>> findByToday(){
+        return ResponseEntity.ok(service.findByToday());
+    }
 }
